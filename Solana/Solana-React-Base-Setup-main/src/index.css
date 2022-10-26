@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+/* Solana Wallet Adapter and Button */
+
+/* Main Connect Wallet Button */
+.wallet-adapter-button-trigger {
+  @apply bg-[#d30c0c] p-3 rounded-2xl !important;
+}
+
+/* Main Connect Wallet Button After Connection with Wallet */
+.wallet-adapter-dropdown {
+  @apply bg-green-800 rounded-2xl !important;
+}
+
+/* Wallet Modal that shows wallets. All wallet buttons use this class */
+/* .wallet-adapter-button {
+} */
+
+/* Wallet Modal that shows wallets. Wallets list use this class */
+.wallet-adapter-dropdown-list {
+  @apply top-auto bottom-full md:top-full md:bottom-auto md:left-0 md:right-auto;
+}
+
+/* Wallet Modal that shows wallets. List in active state uses this class */
+.wallet-adapter-dropdown-list-active {
+  @apply transform -translate-y-3 md:translate-y-3;
+}
+
+/* Custom */
+.disconnect-wallet {
+  background-color: green;
+  border-radius: 15px;
+  padding: 6px 30px;
+}

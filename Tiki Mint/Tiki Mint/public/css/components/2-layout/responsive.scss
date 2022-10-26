@@ -1,0 +1,196 @@
+// 1360px
+@include xxlg-xxxlg {
+  // base start
+  h1 {
+    font-size: 64px;
+    line-height: 72px;
+    &.opps__title {
+      font-size: 60px;
+      line-height: 68px;
+    }
+  }
+  h2 {
+    font-size: 46px;
+    line-height: 50px;
+    &.uniq {
+      font-size: 34px;
+      line-height: 40px;
+    }
+  }
+  h3 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  h4 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  body {
+    font-size: 20px;
+
+    line-height: 24px;
+  }
+  // base end
+  // mint page start
+  @include mint-xxlg-xxxlg;
+
+  // mint page end
+}
+// 1024px
+@include lg-xlg {
+  // base start
+  .auto__container {
+    padding: 0 24px;
+  }
+  h1 {
+    font-size: 48px;
+    line-height: 54px;
+    &.opps__title {
+      font-size: 42px;
+      line-height: 50px;
+    }
+  }
+  h4 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .button {
+    &.connect {
+      font-size: 20px;
+      span {
+        width: 42px;
+        height: 42px;
+      }
+    }
+    &.connected {
+      font-size: 20px;
+    }
+    &.open {
+      font-size: 16px;
+      padding: 16px 20px 16px 65px;
+      span {
+        width: 50px;
+        height: 50px;
+      }
+    }
+    &.uniq {
+      font-size: 16px;
+      padding: 16px 20px 16px 65px;
+      span {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+  // base end
+}
+// 840px
+@include md-lg {
+  // base start
+  .wrapper {
+    &:before {
+      top: 10px;
+      left: 10px;
+      width: calc(100% - 20px);
+      height: calc(100% - 20px);
+    }
+  }
+  // base end
+}
+// 700px
+@include sm-md {
+  h1 {
+    font-size: 42px;
+
+    line-height: 50px;
+    &.opps__title {
+      font-size: 38px;
+      line-height: 46px;
+    }
+    &.general {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+  h2 {
+    font-size: 32px;
+    line-height: 36px;
+    &.uniq {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+  p.sm {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .contract__link {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  h4 {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .button {
+    &.uniq {
+      font-size: 12px;
+      line-height: 14px;
+      padding: 12px 16px 12px 46px;
+      span {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    &.add {
+      font-size: 16px;
+    }
+  }
+  body {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .input {
+    label {
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 10px;
+      input.textarea {
+        font-size: 12px;
+        line-height: 14px;
+        padding: 10px 16px;
+      }
+    }
+  }
+  .check {
+    label {
+      font-size: 14px;
+
+      line-height: 16px;
+      &::before {
+        width: 16px;
+        height: 16px;
+        border: 2px solid $main-dark;
+      }
+      &:after {
+        top: 2px;
+      }
+    }
+  }
+}
+// 540px
+@include xsm-sm {
+  // base start
+  p.sm {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .contract__link {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  // base end
+  // mint page start
+  @include mint-xsm-sm;
+  // mint page end
+}

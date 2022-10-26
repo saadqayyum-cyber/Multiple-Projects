@@ -1,0 +1,444 @@
+.hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 86vh;
+  position: relative;
+  z-index: 100;
+}
+
+.navbar {
+  width: 93%;
+  padding: 1.2rem 1rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  z-index: 10;
+}
+
+.navbar .icons {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.navbar .icons > * {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.navbar .top-btn button {
+  width: 14rem;
+  height: 2.7rem;
+  background: radial-gradient(
+        101.03% 479.71% at 113.42% 181.78%,
+        rgba(152, 104, 255, 0.5) 0%,
+        rgba(60, 103, 255, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    #ffffff;
+  border-radius: 5.51633px;
+  color: #120b1e;
+  font-style: normal;
+  font-weight: 800;
+  text-align: center;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  z-index: 10;
+}
+
+.brut13 {
+  position: absolute;
+  left: 0%;
+  top: 0;
+  width: 53%;
+}
+
+.brut10 {
+  position: absolute;
+  left: 0%;
+  top: 0;
+}
+
+.horse {
+  position: absolute;
+  top: 14px;
+  left: 30px;
+  width: 25%;
+}
+
+.brut-right-top {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  width: 70%;
+}
+
+.brut20 {
+  position: absolute;
+  right: 16rem;
+  top: 5rem;
+}
+
+.brut23 {
+  position: absolute;
+  right: 14.4rem;
+  top: 21.8rem;
+  width: 13%;
+}
+
+.brut12 {
+  display: none;
+}
+
+.brut7 {
+  display: none;
+}
+
+.brut11 {
+  display: none;
+}
+
+.brut8 {
+  display: none;
+}
+
+.brut14 {
+  display: none;
+}
+
+.hero .center {
+  position: absolute;
+  left: 50%;
+  top: 20rem;
+  margin: auto;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.hero .center .top {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 10;
+}
+
+.center .top span:nth-child(1) {
+  color: #fff;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 3.4rem;
+  line-height: 48px;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0px 7.19249px 7.19249px rgba(0, 0, 0, 0.25);
+}
+
+.center .top span:nth-child(2) {
+  color: #fff;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 3.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0px 7.19249px 7.19249px rgba(0, 0, 0, 0.25);
+}
+
+.center .top span:nth-child(3) {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4.5rem;
+  line-height: 108%;
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(
+      94.48deg,
+      rgba(0, 240, 255, 0) 2.52%,
+      rgba(158, 0, 255, 0.37) 37.6%,
+      #9e00ff 97.34%
+    ),
+    radial-gradient(
+      57.16% 132.14% at 31.83% 0%,
+      #b796ff 0%,
+      rgba(140, 172, 255, 0) 100%
+    ),
+    radial-gradient(
+      101.03% 479.71% at 113.42% 181.78%,
+      #9868ff 0%,
+      rgba(60, 103, 255, 0) 100%
+    ),
+    linear-gradient(230.18deg, #65e3ff 18.35%, #0057ff 81.81%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0px 7.19249px 7.19249px rgba(0, 0, 0, 0.25);
+}
+
+.center .bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.8rem;
+  gap: 1.8rem;
+  z-index: 10;
+}
+
+.center .bottom span {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.center .bottom button {
+  width: 20rem;
+  height: 2.8rem;
+  outline: none;
+  border: none;
+  z-index: 50;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.1rem;
+  line-height: 24px;
+  background: radial-gradient(
+        57.16% 132.14% at 31.83% 0%,
+        #b796ff 0%,
+        rgba(140, 172, 255, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+        101.03% 479.71% at 113.42% 181.78%,
+        #9868ff 0%,
+        rgba(60, 103, 255, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    linear-gradient(212.7deg, #65e3ff -17.74%, #0057ff 104.06%);
+  border-radius: 5.51633px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.hero .menu-btn {
+  display: none;
+}
+
+.bottom br {
+  display: none;
+}
+
+.navbar .nav-items {
+  display: flex;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 960px) {
+  .center .top span:nth-child(1),
+  .center .top span:nth-child(2) {
+    font-size: 2.8rem;
+  }
+
+  .center .top span:nth-child(3) {
+    font-size: 3.6rem;
+  }
+
+  .center {
+    top: 19rem !important;
+  }
+
+  .hero {
+    height: 68vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 85vh;
+  }
+
+  .nav-items {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    overflow: hidden;
+    padding: 5rem 0rem 3rem 0rem;
+    z-index: 20;
+    transition: 0.4s ease;
+  }
+
+  .navbar-toggle {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .hero .navbar {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .brut12 {
+    display: block;
+  }
+
+  .brut13 {
+    display: none;
+  }
+
+  .brut-right-top {
+    display: none;
+  }
+
+  .brut20 {
+    display: none;
+  }
+
+  .brut23 {
+    display: none;
+  }
+
+  .brut10 {
+    display: none;
+  }
+
+  .hero .horse {
+    display: none;
+  }
+
+  .brut7 {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+  }
+
+  .brut11 {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 87%;
+  }
+
+  .brut14 {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 20rem;
+    width: 15%;
+  }
+
+  .brut8 {
+    position: absolute;
+    display: block;
+    top: 14rem;
+    width: 95%;
+    left: -1rem;
+    z-index: 0;
+  }
+
+  .hero .top-btn {
+    display: none;
+  }
+
+  .navbar .icons {
+    flex-direction: column;
+    gap: 2rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .navbar .icons > * {
+    font-size: 1.7rem !important;
+  }
+
+  .nav-items ul {
+    display: block;
+    margin-left: 0;
+    padding-left: -0.3rem;
+    list-style-type: none;
+    padding-top: 1.2rem;
+    padding-bottom: 2rem;
+  }
+
+  .nav-items ul li {
+    margin-left: 0rem;
+    margin-top: 1.3rem;
+    color: var(--white);
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+  }
+
+  .nav-items ul li:nth-child(1) {
+    margin-top: 1rem;
+  }
+
+  /* .icons .envelop, .send{
+    display: none;
+  } */
+
+  .hero .menu-btn {
+    display: block;
+  }
+
+  .hero .icons > * {
+    font-size: 1.8rem;
+  }
+
+  .hero .menu-btn > * {
+    font-size: 1.8rem;
+    color: #fff;
+  }
+  .center .top span:nth-child(1),
+  .center .top span:nth-child(2) {
+    font-size: 1.6rem;
+  }
+
+  .center .top span:nth-child(3) {
+    font-size: 2.4rem;
+  }
+  .bottom br {
+    display: block;
+  }
+
+  .toggle {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .nav-items {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    overflow: hidden;
+    background: #000;
+    padding: 1rem 0rem 2.2rem 0rem;
+    z-index: 20;
+    transition: 0.4s ease;
+  }
+
+  .nav-items ul {
+    display: block;
+    color: #000;
+  }
+
+  .navbar-toggle {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+/* Main Connect Wallet Button */
+.wallet-adapter-button-trigger {
+  justify-content: center;
+}

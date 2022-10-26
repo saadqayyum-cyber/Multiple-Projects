@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Clashdisplay";
+  src: local("Clashdisplay"), url(./fonts/ClashDisplay.otf) format("opentype");
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                                      'embedded-opentype', and 'svg' */
+}
+
+.mintBtn {
+  background-image: linear-gradient(140deg, #f39600, #f14000);
+  border-radius: 42px;
+  color: #fff;
+  font-weight: 500;
+  padding: 6px 30px;
+  font-size: 22px;
+  transition: 0.1s linear;
+  position: relative;
+  top: 0;
+}

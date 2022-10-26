@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Associate Sans';
+    src: url('AssociateSans-Light.woff2') format('woff2'),
+        url('AssociateSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Martellas Caps';
+    src: url('MartellasCaps.woff2') format('woff2'),
+        url('MartellasCaps.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Associate Sans';
+    src: url('AssociateSans-Regular.woff2') format('woff2'),
+        url('AssociateSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

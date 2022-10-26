@@ -1,0 +1,46 @@
+:root{
+  --purple: #8976F7;
+  --orange: #ea696e;
+  --text: #233E57;
+  --white: #fff;
+  --pink: #E74457;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.App{
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100%;
+    background: #000;
+}
+
+.button{
+  width: 10rem;
+  height: 2.6rem;
+  background-color: var(--purple);
+  color: var(--white) !important;
+  font-weight: 700 !important;
+  border-radius: 3rem !important;
+  transition: all .4s;
+  text-transform: uppercase;
+  border: none;
+}
+
+.button:hover{
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+
+  
+
+  

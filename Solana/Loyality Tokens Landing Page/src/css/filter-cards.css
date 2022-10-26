@@ -1,0 +1,410 @@
+.filter-cards{
+    width: 100%;
+    height: 100vh;
+    padding: 1rem 4rem;
+    position: relative;
+    margin-top: -1rem;
+}
+
+.eclipse21{
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%,-50%);
+    margin: auto;
+    z-index: 0;
+}
+
+.eclipse22{
+    position: absolute;
+    left: -3rem;
+    top: -5rem;
+    z-index: 0;
+}
+
+.eclipse18{
+    position: absolute;
+    left: -5rem;
+    top: -45rem;
+    z-index: 0;
+}
+
+.filter-cards .heading{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+    width: 100%;
+}
+
+.filter-cards .heading span{
+    font-style: normal;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 128%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.filter-cards .left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 100;
+}
+
+.left .filter-heading,.cart{
+    width: 13rem;
+    height: 2.9rem;
+    background: radial-gradient(101.03% 479.71% at 113.42% 181.78%, rgba(152, 104, 255, 0.5) 0%, rgba(60, 103, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #FFFFFF;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.left .filter-heading span,
+.left .cart span{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.125em;
+    text-transform: uppercase;
+}
+
+.cart >*,
+.filter-heading>*{
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.left .cart{
+    margin-top: 10px;
+}
+
+.left .line{
+    width: 100%;
+    background-color: gray;
+    height: 1.1px;
+}
+
+.left .filter-container{
+    background: rgba(74, 74, 74, 0.61);
+    backdrop-filter: blur(37.7213px);
+    border-radius: 32.12px;
+    height: 100%;
+    padding: 1.5rem 1rem;
+    border: 0.4px solid lightgray;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    z-index: 100;
+    color: #fff;
+}
+
+.filter-container select{
+    background: transparent;
+    border-top: 0.4px solid gray;
+    border-radius: 5px;
+    padding: 0 .6rem;
+    height: 3rem;
+    width: 100%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.125em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    outline: none;
+}
+
+.filter-container .price, .brand, .available{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.filter-container .price, .brand, .available span{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 10px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.left .from-to{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.from-to input{
+    width: 50%;
+    height: 2.5rem;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    border: 1.8px solid gray;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.from-to input::placeholder{
+    color: #fff;
+}
+
+.available input{
+    width: 50%;
+    height: 2.5rem;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    border: 1.8px solid gray;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.right .text-box{
+    width: 20%;
+    z-index: 100;
+    height: 2.7rem;
+    position: relative;
+    margin-bottom: 20px;
+    margin-left: auto;
+    border-radius: 6px;
+    background: radial-gradient(101.03% 479.71% at 113.42% 181.78%, rgba(152, 104, 255, 0.5) 0%, rgba(60, 103, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #FFFFFF;
+}
+
+.text-box input{
+    width: 13rem;
+    height: 2.8rem;
+    border-radius: 5px;
+    padding-left: 14px;
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 100%;
+    color: #000;
+    font-weight: 700;
+}
+
+.text-box .search-icon{
+    position: absolute;
+    right: 7%;
+    top:28%;
+    font-size: 1.5rem;
+}
+
+.text-box input::placeholder{
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+ /* cards  */
+
+ .cards{
+    max-width: 99%;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 2.5rem;
+ }
+
+ .cards .card-single{
+    display: flex;
+    flex-direction: column;
+    gap: .9rem;
+    background-color: transparent;
+    max-width: 18rem;
+ }
+
+ .card-single .box{
+    width: 12rem;
+    height: 8rem;
+    /* background: rgba(74, 74, 74, 0.21); */
+    /* backdrop-filter: blur(37.7213px); */
+    border-radius: 31.12px;
+    margin: auto;
+    z-index: 100;
+    /* border-top: 1.2px solid lightcyan;
+    border-left: 0.7px solid gray;
+    border-right: 0.7px solid gray; */
+ }
+
+ .card-single .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .6rem;
+ }
+
+ .content span{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+ }
+
+ .content button{
+    width: 60%;
+  height: 2.7rem;
+  outline: none;
+  border: none;
+  z-index: 50;
+  font-style: normal;
+    font-weight: 800;
+    font-size: 1rem;
+    line-height: 24px;
+  background: radial-gradient(
+        57.16% 132.14% at 31.83% 0%,
+        #b796ff 0%,
+        rgba(140, 172, 255, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+        101.03% 479.71% at 113.42% 181.78%,
+        #9868ff 0%,
+        rgba(60, 103, 255, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    linear-gradient(212.7deg, #65e3ff -17.74%, #0057ff 104.06%);
+  border-radius: 5.51633px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 8px;
+ }
+
+ .arrow-down{
+    display: none;
+}
+
+.horseMobile{
+    display: none;
+}
+
+
+.card-single .box img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 31.12px;
+ }
+
+@media screen and (max-width:1200px) {
+    .filter-cards{
+        padding: 1.5rem;
+    }
+  
+}
+
+ @media screen and (max-width:768px) {
+    .cards{
+        max-width: 100%;
+        flex-wrap: wrap;
+        gap: .8rem;
+        gap: 0;
+        margin-bottom: 0;
+        margin: auto;
+     }
+
+     .horseMobile{
+        display: block;
+        margin-top: 2rem;
+        width: 95%;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+     .filter-cards{
+        height: auto;
+     }
+
+     .card-single .box{
+        width: 90%;
+        border-radius: 18px;
+     }
+
+     .card-single .box img{
+        width: 100%;
+        object-fit: contain;
+        margin-left: 5px;
+     }
+
+     .card-single{
+        margin-bottom: 2rem;
+     }
+
+     .filter-cards{
+        padding: 1rem 1rem;
+     }
+
+     .filter-cards .row{
+        --bs-gutter-x: 0;
+     }
+
+     .content span{
+        font-size: 14px;
+     }
+     .content button{
+        width: 70%;
+        height: 2.6rem;
+     }
+
+     .right .text-box{
+        width: 70%;
+        margin-top: 2.9rem;
+        margin-bottom: 2rem;
+     }
+
+     .filter-cards .heading span{
+        font-size: 1.1rem;
+    }
+    .left .filter-heading{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .left .filter-container{
+        width: 94%;
+        margin: auto;
+        margin-top: 0rem;
+        margin-bottom: 2.5rem;
+        display: none;
+    }
+
+    .active-filter-container{
+        display: block !important;
+    }
+
+    .cart{
+        display: none;
+    }
+
+    .filter-cards .left{
+        flex-direction: column !important;
+    }
+
+    .arrow-down{
+        display: block;
+    }
+
+    .text-box{
+        display: none;
+    }
+
+
+ }

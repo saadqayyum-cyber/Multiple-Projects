@@ -1,0 +1,261 @@
+h1 {
+  font-size: 82px;
+  line-height: 92px;
+  font-weight: 400;
+  color: $second;
+  font-family: $martellas;
+  &.opps__title {
+    font-size: 68px;
+    line-height: 76px;
+    color: #ffe8b7;
+  }
+  &.general {
+    font-size: 45px;
+    line-height: 55px;
+    color: #ffe8b7;
+  }
+}
+h3 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 400;
+  font-family: $martellas;
+  color: $main-dark;
+  text-decoration: underline;
+}
+h4 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 400;
+  color: $white;
+}
+.button {
+  position: relative;
+  @include transition;
+  &.wow {
+    opacity: 0;
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+  &.connect {
+    background: $main;
+    padding-left: 80px;
+    padding: 12px 20px 12px 60px;
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 700;
+    font-family: $mainFont;
+    color: $white;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 50px;
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background: $white;
+      position: absolute;
+      top: 50%;
+      @include transformY;
+      left: 1px;
+      img {
+        width: 80%;
+      }
+    }
+  }
+  &.connected {
+    background: $main;
+    padding-left: 80px;
+    padding: 12px 24px 12px 24px;
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 400;
+    font-family: $mainFont;
+    color: $white;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 50px;
+  }
+  &.open {
+    background: #873037;
+    border: 1px solid $white;
+    padding-left: 80px;
+    padding: 20px 30px 20px 70px;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 300;
+    font-family: $associate;
+    color: $white;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 50px;
+    @include transition;
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      @include transformY;
+      left: 0;
+      img {
+        width: 100%;
+      }
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  &.add {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 700;
+    cursor: pointer;
+    color: $main;
+    border: 1px solid rgba($color: $white, $alpha: 1);
+    background: $white;
+    box-shadow: 0px 3px 6px rgba($color: #000000, $alpha: 0.16),
+      inset 0px 3px 6px rgba($color: #000000, $alpha: 0.16);
+  }
+  &.uniq {
+    cursor: pointer;
+    color: $main;
+    border: 1px solid rgba($color: $white, $alpha: 1);
+    background: #d4e4ed;
+    box-shadow: 0px 3px 6px rgba($color: #000000, $alpha: 0.16),
+      inset 0px 3px 6px rgba($color: #000000, $alpha: 0.16);
+    padding-left: 80px;
+    padding: 14px 24px 14px 55px;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 300;
+    font-family: $mainFont;
+    color: $main-dark;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 50px;
+    @include transition;
+    box-sizing: border-box;
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      @include transformY;
+      left: 0;
+      img {
+        width: 100%;
+      }
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+.input {
+  margin-bottom: 16px;
+  label {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #381300;
+    font-family: $mainFont;
+    margin-bottom: 10px;
+    display: block;
+    text-transform: uppercase;
+  }
+  input,
+  textarea {
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    background: $white;
+    resize: none;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #381300;
+    font-family: $mainFont;
+    &::placeholder {
+      color: rgba($color: $main, $alpha: 0.5);
+    }
+  }
+}
+.check {
+  position: relative;
+  cursor: pointer;
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+    &:checked + label::after {
+      opacity: 1;
+    }
+  }
+  label {
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #381300;
+    font-family: $mainFont;
+    position: relative;
+    padding-left: 32px;
+    display: block;
+    margin-bottom: 10px;
+    a {
+      color: #0083c5;
+      position: relative;
+      z-index: 1;
+    }
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 18px;
+      height: 18px;
+      background: rgba($color: #f1e9d7, $alpha: 0.5);
+      border: 2px solid $main;
+      border-radius: 4px;
+      content: "";
+    }
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 4px;
+      left: 7px;
+      opacity: 0;
+      width: 5px;
+      height: 10px;
+      border-bottom: 2px solid $main;
+      border-right: 2px solid $main;
+      transform: rotate(45deg);
+      @include transition;
+    }
+  }
+}

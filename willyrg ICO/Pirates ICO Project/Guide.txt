@@ -1,0 +1,30 @@
+Deployment:
+
+1 - Deploy Pirates Token from Remix
+2 - Deploy PiratesCrowdSale from Remix with 2 parameters
+      a) Pirates Token Address
+      b) Owner of Pirates Token 
+
+After Deployment:
+
+3 - approve 5M tokens to PiratesCrowdSale contract so he can spend it.
+    For approval Owner of Pirates Token can approve it from Remix.
+     
+       5M Tokens = 5000000000000000000000000
+
+    Approve this value to PiratesCrowdSale contract
+
+
+After that in Website:
+
+
+1 - Put Pirates Token address in src/blockchain/PiratesToken.js
+2 - Put PiratesTokenCrowdsale address in src/blockchain/PiratesTokenCrowdsale.js
+
+And then everything will be ready
+
+
+
+--------------------------------------------
+
+For withdraw funds owner will call withdraw action from contract

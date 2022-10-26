@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e7bebd41.css",
+    "main.js": "/static/js/main.118736c2.js",
+    "static/media/pizza.jpg": "/static/media/pizza.12966f5f88126ffd18ba.jpg",
+    "static/media/eclipse18.png": "/static/media/eclipse18.df52227c8ee2d6130492.png",
+    "static/media/brutright.png": "/static/media/brutright.90d4db1530cd2b6c81b2.png",
+    "static/media/eclipse21.png": "/static/media/eclipse21.4a6170274d45ee347949.png",
+    "static/media/eclipse22.png": "/static/media/eclipse22.cc89926e14e016dc61e6.png",
+    "static/media/brut13.png": "/static/media/brut13.f93fbb4de5938c476ad0.png",
+    "static/media/faqbottom.png": "/static/media/faqbottom.f34e415f20ac66347d3c.png",
+    "static/media/brut8.png": "/static/media/brut8.241f1317e30c2cec369b.png",
+    "static/media/horse.png": "/static/media/horse.34c1c82cbb2477157e3f.png",
+    "static/media/brut23.png": "/static/media/brut23.570435a082c3be4ce7aa.png",
+    "static/media/brut11.png": "/static/media/brut11.69f115ff8290fef96a04.png",
+    "static/media/brut12.png": "/static/media/brut12.a3b7f6974465f1589976.png",
+    "static/media/brut10.png": "/static/media/brut10.d60e92a2c7307f858c6b.png",
+    "static/media/brut7.png": "/static/media/brut7.f549e4c2d616a2a9dfc0.png",
+    "static/media/brut20.png": "/static/media/brut20.18f1d35dabefd89eb7e9.png",
+    "index.html": "/index.html",
+    "main.e7bebd41.css.map": "/static/css/main.e7bebd41.css.map",
+    "main.118736c2.js.map": "/static/js/main.118736c2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e7bebd41.css",
+    "static/js/main.118736c2.js"
+  ]
+}
